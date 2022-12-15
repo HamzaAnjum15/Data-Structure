@@ -26,7 +26,7 @@ int main()
     int arr[10];
     int num;
     int output;
-    cout << "enter 10 integers in ascending order" << endl;
+    cout << "enter 10 integers" << endl;
     for (int i = 0; i < 10; i++)
     {
         cin >> arr[i];
