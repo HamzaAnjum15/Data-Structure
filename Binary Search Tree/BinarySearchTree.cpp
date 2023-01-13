@@ -95,6 +95,17 @@ public:
         cout << r->Value << "\n";           // 6
         print2D(r->Left, space);            // Process left child  7
     }
+     void PrintPreOrder(TreeNode *_r) //(Root,left,right)
+    {
+        if (_r == NULL)
+            return;
+        // first print data of node
+        cout << _r->Value << " ";
+        // 2nd print left value
+        PrintPreOrder(_r->Left);
+        // 3rd print right value
+        PrintPreOrder(_r->Right);
+    }
     
 
 };
@@ -140,6 +151,9 @@ int main()
             cout << "PRINT 2D" << endl;
             Obj.print2D(Obj.Root, 5);
             cout << endl;
+            Obj.PrintPreOrder(Obj.Root);
+            cout << endl;
+            break;
         case 5:
             cout<<"TREE HEIGHT"<<endl;
             break;
