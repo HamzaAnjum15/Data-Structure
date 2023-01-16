@@ -117,6 +117,17 @@ public:
         // 3rd print right value
         PrintInOrder(_r->Right);
     }
+    void PrintPostOrder(TreeNode *_r) //(Root,left,right)
+    {
+        if (_r == NULL)
+            return;
+        // 1st print left value
+        PrintPreOrder(_r->Left);
+        // 2nd print right value
+        PrintPreOrder(_r->Right);
+        // 3rd print data of node
+        cout << _r->Value << " ";
+    }
     
 
 };
@@ -167,7 +178,10 @@ int main()
             cout << endl;
             cout << "INORDER" << endl;
             Obj.PrintInOrder(Obj.Root);
-            cout << endl;    
+            cout << endl;   
+            cout << "POSTORDER" << endl;
+            Obj.PrintPostOrder(Obj.Root);
+            cout << endl;
             break;
         case 5:
             cout<<"TREE HEIGHT"<<endl;
