@@ -128,6 +128,35 @@ public:
         // 3rd print data of node
         cout << _r->Value << " ";
     }
+    TreeNode *SearchNode(int _val)
+    {
+        if (Root == NULL)
+        {
+            return Root;
+        }
+        else
+        {
+            TreeNode *Temp = Root;
+            while (Temp != NULL)
+            {
+                if (_val == Temp->Value)
+                {
+                    return Temp;
+                }
+
+                else if (_val < Temp->Value)
+                {
+                    Temp = Temp->Left;
+                }
+                else
+                {
+                    Temp = Temp->Right;
+                }
+            }
+            return NULL;
+        }
+    }
+    
     
 
 };
@@ -164,6 +193,16 @@ int main()
             break;
         case 2:
             cout << "SEARCH" << endl;
+            cout << "Enter the value of tree node you want to search" << endl;
+            cin >> Val;
+            NewNode=Obj.SearchNode(Val);
+            if(NewNode!=NULL){
+                cout<<"Value found"<<endl;
+            
+            }
+            else{
+                cout<<"Value not found"<<endl;
+            }
 
             break;
         case 3:
