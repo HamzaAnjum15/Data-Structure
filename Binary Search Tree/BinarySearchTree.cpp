@@ -156,6 +156,18 @@ public:
             return NULL;
         }
     }
+    void PrintGivenLevel(TreeNode* _r,int Level){
+        if(_r==NULL){
+            return;
+        }
+        else if(Level==0){
+            cout<<_r->Value<<" ";
+        }
+        else{
+            PrintGivenLevel(_r->Left,Level-1);
+            PrintGivenLevel(_r->Right,Level-1);
+        }
+    }
     
     
 
