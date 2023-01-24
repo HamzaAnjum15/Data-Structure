@@ -1,6 +1,7 @@
 #include <iostream>
 #define SPACE 10
 using namespace std;
+//Tree node class
 class TreeNode
 {
 public:
