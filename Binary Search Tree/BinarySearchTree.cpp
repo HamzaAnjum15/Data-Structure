@@ -21,6 +21,7 @@ public:
         Right = NULL;
     }
 };
+// Binary Search Tree class
 class BST
 {
 public:
