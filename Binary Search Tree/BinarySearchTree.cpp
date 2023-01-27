@@ -41,6 +41,7 @@ public:
             return false;
         }
     }
+    //Function for inserting node
     void InsertNode(TreeNode *_new_node)
     {
 
