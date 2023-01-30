@@ -30,6 +30,7 @@ public:
     {
         Root = NULL;
     }
+    //function for checking if the root is empty
     bool IsEmpty()
     {
         if (Root == NULL)
