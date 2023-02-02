@@ -86,7 +86,7 @@ public:
             }
         }
     }
-
+    //Function for printing tree in graphical way
     void print2D(TreeNode *r, int space)
     {
         if (r == NULL) // Base case  1
