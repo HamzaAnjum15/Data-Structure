@@ -99,6 +99,7 @@ public:
         cout << r->Value << "\n";           // 6
         print2D(r->Left, space);            // Process left child  7
     }
+    //Function for printing tree in preorder
      void PrintPreOrder(TreeNode *_r) //(Root,left,right)
     {
         if (_r == NULL)
