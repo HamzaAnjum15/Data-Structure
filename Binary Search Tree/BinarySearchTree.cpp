@@ -111,6 +111,7 @@ public:
         // 3rd print right value
         PrintPreOrder(_r->Right);
     }
+    //Function for printing tree in inorder
     void PrintInOrder(TreeNode *_r) //(Root,left,right)
     {
         if (_r == NULL)
