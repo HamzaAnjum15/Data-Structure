@@ -123,6 +123,7 @@ public:
         // 3rd print right value
         PrintInOrder(_r->Right);
     }
+    //Function for printing tree in postorder
     void PrintPostOrder(TreeNode *_r) //(Root,left,right)
     {
         if (_r == NULL)
